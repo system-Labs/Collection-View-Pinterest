@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042404432430A951002E3B72 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042404422430A951002E3B72 /* ViewModel.swift */; };
 		04B19584242E375700C2965A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B19583242E375700C2965A /* AppDelegate.swift */; };
 		04B19586242E375700C2965A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B19585242E375700C2965A /* SceneDelegate.swift */; };
 		04B19588242E375700C2965A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B19587242E375700C2965A /* ViewController.swift */; };
@@ -17,33 +16,24 @@
 		04B19593242E375800C2965A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B19591242E375800C2965A /* LaunchScreen.storyboard */; };
 		04B1959B242E520B00C2965A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1959A242E520B00C2965A /* PhotoCell.swift */; };
 		04B1959D242E6DAF00C2965A /* Pintrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1959C242E6DAF00C2965A /* Pintrest.swift */; };
-		04E957D3242F848000A5DBA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E957D2242F848000A5DBA9 /* APIClient.swift */; };
-		04E957D5242F889200A5DBA9 /* UnplasImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E957D4242F889200A5DBA9 /* UnplasImage.swift */; };
-		04E957D7242F981B00A5DBA9 /* EndPiont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E957D6242F981B00A5DBA9 /* EndPiont.swift */; };
-		04E957DA242F99E200A5DBA9 /* UnsplashClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E957D9242F99E200A5DBA9 /* UnsplashClient.swift */; };
 		F21289A6456AC1F58BC42278 /* Pods_Collection_View___Git_Hub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E7E8742A12D8911A4739ED /* Pods_Collection_View___Git_Hub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		042404422430A951002E3B72 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		04B19580242E375700C2965A /* Collection View - Git_Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection View - Git_Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B19583242E375700C2965A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B19585242E375700C2965A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04B19587242E375700C2965A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04B1958A242E375700C2965A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04B1958D242E375700C2965A /* Collection_View___Git_Hub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collection_View___Git_Hub.xcdatamodel; sourceTree = "<group>"; };
+		04B1958D242E375700C2965A /* Collection_View___Git_Hub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Collection_View___Git_Hub.xcdatamodel"; sourceTree = "<group>"; };
 		04B1958F242E375800C2965A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B19592242E375800C2965A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B19594242E375800C2965A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B1959A242E520B00C2965A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		04B1959C242E6DAF00C2965A /* Pintrest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pintrest.swift; sourceTree = "<group>"; };
-		04E957D2242F848000A5DBA9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		04E957D4242F889200A5DBA9 /* UnplasImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplasImage.swift; sourceTree = "<group>"; };
-		04E957D6242F981B00A5DBA9 /* EndPiont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPiont.swift; sourceTree = "<group>"; };
-		04E957D9242F99E200A5DBA9 /* UnsplashClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashClient.swift; sourceTree = "<group>"; };
 		4F02EE98386E2BA94D5C4556 /* Pods-Collection View - Git_Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection View - Git_Hub.release.xcconfig"; path = "Target Support Files/Pods-Collection View - Git_Hub/Pods-Collection View - Git_Hub.release.xcconfig"; sourceTree = "<group>"; };
 		5BB038630A07C71B046ED471 /* Pods-Collection View - Git_Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection View - Git_Hub.debug.xcconfig"; path = "Target Support Files/Pods-Collection View - Git_Hub/Pods-Collection View - Git_Hub.debug.xcconfig"; sourceTree = "<group>"; };
-		68E7E8742A12D8911A4739ED /* Pods_Collection_View___Git_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collection_View___Git_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E7E8742A12D8911A4739ED /* Pods_Collection_View___Git_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Collection_View___Git_Hub.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +48,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042404412430A93B002E3B72 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				042404422430A951002E3B72 /* ViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		04B19577242E375600C2965A = {
 			isa = PBXGroup;
 			children = (
@@ -87,8 +69,6 @@
 		04B19582242E375700C2965A /* Collection View - Git_Hub */ = {
 			isa = PBXGroup;
 			children = (
-				042404412430A93B002E3B72 /* ViewModels */,
-				04E957DB242FC71C00A5DBA9 /* Networking */,
 				04B19583242E375700C2965A /* AppDelegate.swift */,
 				04B19585242E375700C2965A /* SceneDelegate.swift */,
 				04B19587242E375700C2965A /* ViewController.swift */,
@@ -101,17 +81,6 @@
 				04B1959C242E6DAF00C2965A /* Pintrest.swift */,
 			);
 			path = "Collection View - Git_Hub";
-			sourceTree = "<group>";
-		};
-		04E957DB242FC71C00A5DBA9 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				04E957D2242F848000A5DBA9 /* APIClient.swift */,
-				04E957D4242F889200A5DBA9 /* UnplasImage.swift */,
-				04E957D6242F981B00A5DBA9 /* EndPiont.swift */,
-				04E957D9242F99E200A5DBA9 /* UnsplashClient.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		0C7509399A7D1A98EC959D41 /* Frameworks */ = {
@@ -128,7 +97,6 @@
 				5BB038630A07C71B046ED471 /* Pods-Collection View - Git_Hub.debug.xcconfig */,
 				4F02EE98386E2BA94D5C4556 /* Pods-Collection View - Git_Hub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,15 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B19588242E375700C2965A /* ViewController.swift in Sources */,
-				04E957DA242F99E200A5DBA9 /* UnsplashClient.swift in Sources */,
-				04E957D3242F848000A5DBA9 /* APIClient.swift in Sources */,
-				042404432430A951002E3B72 /* ViewModel.swift in Sources */,
-				04E957D5242F889200A5DBA9 /* UnplasImage.swift in Sources */,
 				04B1959B242E520B00C2965A /* PhotoCell.swift in Sources */,
 				04B19584242E375700C2965A /* AppDelegate.swift in Sources */,
 				04B19586242E375700C2965A /* SceneDelegate.swift in Sources */,
 				04B1959D242E6DAF00C2965A /* Pintrest.swift in Sources */,
-				04E957D7242F981B00A5DBA9 /* EndPiont.swift in Sources */,
 				04B1958E242E375700C2965A /* Collection_View___Git_Hub.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +428,7 @@
 				04B1958D242E375700C2965A /* Collection_View___Git_Hub.xcdatamodel */,
 			);
 			currentVersion = 04B1958D242E375700C2965A /* Collection_View___Git_Hub.xcdatamodel */;
-			path = Collection_View___Git_Hub.xcdatamodeld;
+			path = "Collection_View___Git_Hub.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

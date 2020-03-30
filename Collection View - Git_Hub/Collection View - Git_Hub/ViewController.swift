@@ -12,8 +12,7 @@ import Alamofire
 class ViewController: UIViewController {
 
     // MARK :- Variables
-    let viewModel = ViewModel(client: UnspalshClient())
-    
+    var arrayOFImages : [UIImage] = [UIImage(imageLiteralResourceName: <#T##String#>)]
     //MARK :- Outlet
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -56,10 +55,14 @@ class ViewController: UIViewController {
         
        */
         
-        Alamofire.request("https://pixabay.com/api/15810784-31acc612296e0df4b99e752e9",method: .get).responseString{(respons) in
+        Alamofire.request("https://pixabay.com/api/?key=15810784-31acc612296e0df4b99e752e9&q=yellow+flowers&image_type=photo&pretty=true",method: .get, parameters: ["photo":"latest"]).responseString{(respons) in
             if respons.result.isSuccess{
                 print("Success With Samur")
                 print(respons.result.value!)
+                if let data = respons.data{
+                    self.parseData(JSONData: data)
+                    //self.arrayOFImages.append(UIImage(data: data)!)
+                }
             }else{
                 print("Failed")
             }
@@ -70,25 +73,17 @@ class ViewController: UIViewController {
             layout.delegate = self
         }
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        
-        viewModel.showLoading = {
-            if self.viewModel.isLoading {
-                self.activityIndicator.startAnimating()
-                self.collectionView.alpha = 0.0
-            }else{
-                self.activityIndicator.stopAnimating()
-                self.collectionView.alpha = 1.0
-            }
-        }
-        viewModel.showError = { error in
-            print(error)
-        }
-        viewModel.reloadData = {
-            self.collectionView.reloadData()
-        }
-        viewModel.fetchPhotos()
     }
 
+    func parseData(JSONData : Data){
+        do{
+        let readableJSON = try JSONSerialization.jsonObject(with: JSONData, options:.allowFragments) as! [[UIImage:AnyObject]]
+        print(readableJSON.count)
+        }catch{
+            
+        }
+
+    }
 
 }
 
