@@ -56,9 +56,10 @@ class ViewController: UIViewController {
         
        */
         
-        Alamofire.request("https://api.unsplash.com/photos/",method: .get,parameters: ["YttK1qKKQ0j7DEuQixvyxuZJSY1iVTPRIAMXLlzznPk": ".latest"]).responseString{(respons) in
+        Alamofire.request("https://pixabay.com/api/15810784-31acc612296e0df4b99e752e9",method: .get).responseString{(respons) in
             if respons.result.isSuccess{
-                print("Success")
+                print("Success With Samur")
+                print(respons.result.value!)
             }else{
                 print("Failed")
             }

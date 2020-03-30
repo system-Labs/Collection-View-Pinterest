@@ -43,7 +43,7 @@ extension APIClient{
                 completion(.error(APIError.jsonDecoder))
                 return
             }
-            print(T.self)
+            //print(T.self)
             //print(value)
             DispatchQueue.main.async {
                 completion(.success(value))
