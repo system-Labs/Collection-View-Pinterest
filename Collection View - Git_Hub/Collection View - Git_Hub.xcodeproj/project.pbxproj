@@ -17,6 +17,7 @@
 		04B1959B242E520B00C2965A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1959A242E520B00C2965A /* PhotoCell.swift */; };
 		04B1959D242E6DAF00C2965A /* Pintrest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1959C242E6DAF00C2965A /* Pintrest.swift */; };
 		F21289A6456AC1F58BC42278 /* Pods_Collection_View___Git_Hub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E7E8742A12D8911A4739ED /* Pods_Collection_View___Git_Hub.framework */; };
+		FA88DE102433C11C0083F3A3 /* PhotosDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA88DE0F2433C11C0083F3A3 /* PhotosDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4F02EE98386E2BA94D5C4556 /* Pods-Collection View - Git_Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection View - Git_Hub.release.xcconfig"; path = "Target Support Files/Pods-Collection View - Git_Hub/Pods-Collection View - Git_Hub.release.xcconfig"; sourceTree = "<group>"; };
 		5BB038630A07C71B046ED471 /* Pods-Collection View - Git_Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection View - Git_Hub.debug.xcconfig"; path = "Target Support Files/Pods-Collection View - Git_Hub/Pods-Collection View - Git_Hub.debug.xcconfig"; sourceTree = "<group>"; };
 		68E7E8742A12D8911A4739ED /* Pods_Collection_View___Git_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Collection_View___Git_Hub.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA88DE0F2433C11C0083F3A3 /* PhotosDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				04B1958C242E375700C2965A /* Collection_View___Git_Hub.xcdatamodeld */,
 				04B1959A242E520B00C2965A /* PhotoCell.swift */,
 				04B1959C242E6DAF00C2965A /* Pintrest.swift */,
+				FA88DE0F2433C11C0083F3A3 /* PhotosDetails.swift */,
 			);
 			path = "Collection View - Git_Hub";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA88DE102433C11C0083F3A3 /* PhotosDetails.swift in Sources */,
 				04B19588242E375700C2965A /* ViewController.swift in Sources */,
 				04B1959B242E520B00C2965A /* PhotoCell.swift in Sources */,
 				04B19584242E375700C2965A /* AppDelegate.swift in Sources */,
@@ -368,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 977ZUDX2NY;
 				INFOPLIST_FILE = "Collection View - Git_Hub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +392,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 977ZUDX2NY;
 				INFOPLIST_FILE = "Collection View - Git_Hub/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

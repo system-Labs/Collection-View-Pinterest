@@ -9,8 +9,11 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    var photoID : [[String:Any]] = [[String:Any]]()
+    var array: [Int] = []
     // MARK :- Variables
     var imageArray = ["image1","image2","image3","image4","image5","image6","image7"]
     //MARK :- Outlet
@@ -21,22 +24,37 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
         
+        
+        let key = "15810784-31acc612296e0df4b99e752e9"
+        let link = "https://pixabay.com/api/?key=\(key)&q=yellow+flowers&image_type=photo&pretty=true"
+        Alamofire.request(link).responseJSON{
+            (respones) in
+        if let responseValue = respones.result.value as! [String: Any]? {
+         if let responseHits = responseValue["hits"] as! [[String:Any]]?{
+             //(responseHits)
+             if responseHits.count > 0{
+             for i in 0..<responseHits.count
+              {
+               // print(responseHits[i]["previewURL"])
+                  let imageURL = responseHits[i]
+              if let url = imageURL["previewURL"] as? String{
+                print(url)
+                self.imageArray.append(url)
+                }
+            }
+        }
+    }
+ }
+}
+            
+              print(imageArray)
         print("App Launched")
         if let layout = collectionView.collectionViewLayout as? PinterestLayout{
             layout.delegate = self
         }
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-    }
-    func parseData(JSONData : Data){
-        do{
-        let readableJSON = try JSONSerialization.jsonObject(with: JSONData, options:.allowFragments) as! [[UIImage:AnyObject]]
-        print(readableJSON.count)
-        }catch{
-            
-        }
-
-    }
-
+        
+}
 }
 
 extension ViewController: PinterestLayoutDelegate{
@@ -58,7 +76,7 @@ extension ViewController : UICollectionViewDataSource,UICollectionViewDelegate{
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         let image = UIImage(named: imageArray[indexPath.item])
-        cell.imageView.image = image as! UIImage
+        cell.imageView.image = image!
         return cell
     }
     
